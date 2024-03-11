@@ -15,4 +15,5 @@ urlpatterns = [
     path('disclaimer', views.disclaimer, name='disclaimer'),
     path('contactinfo', views.contactinfo, name='contactinfo'),
     path('delete_contact_entry/<int:entry_id>/', views.delete_contact_entry, name='delete_contact_entry'),
+    path('gallery', views.gallery, name='gallery'),
 ]
