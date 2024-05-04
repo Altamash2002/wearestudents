@@ -54,3 +54,8 @@ class Contactinfo(models.Model):
 
     def __str__(self):
         return self.name
+    
+class GalleryImage(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    url = models.ImageField(upload_to='gallery_images/')
